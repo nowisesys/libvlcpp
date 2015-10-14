@@ -87,7 +87,15 @@ void Application::BatchMode()
         try {
                 vlc.AddBroadcast(options.media.name.c_str(), options.media.input.c_str(), options.media.output.c_str(), options.media.numopts, options.media.options, options.media.enabled, options.media.loop);
                 vlc.PlayMedia(options.media.name.c_str());
-                std::cin >> done;
+
+                if(options.runtime.verbose) {
+                        std::cout << "Press <enter> to finish\n";
+                }
+                std::cin.get();
+                if(options.runtime.verbose) {
+                        std::cout << "Stopping media and exiting.\n";
+                }
+
                 vlc.StopMedia(options.media.name.c_str());
                 vlc.RemoveMedia(options.media.name.c_str());
         } catch(VLCPP::Exception &exception) {
