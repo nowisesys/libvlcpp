@@ -19,11 +19,14 @@ AC_PROG_MAKE_SET
 AC_PROG_RANLIB
 LT_INIT
 
+# Compile test as C++:
+AC_LANG([C++])
+
 # Checks for libraries.
 AC_CHECK_LIB([dl], [dlopen])
 
 # Checks for header files.
-AC_CHECK_HEADERS([limits.h stdint.h wchar.h cstdlib])
+AC_CHECK_HEADERS([limits.h stdint.h wchar.h cstdlib cstring])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL
