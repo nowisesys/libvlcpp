@@ -9,14 +9,21 @@ AC_CONFIG_MACRO_DIRS([m4])
 AM_INIT_AUTOMAKE
 
 # Checks for programs.
+AC_PROG_AWK
 AC_PROG_CXX
 AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
 LT_INIT
 
 # Checks for libraries.
+AC_CHECK_LIB([dl], [dlopen])
 
 # Checks for header files.
-AC_CHECK_HEADERS([limits.h stdint.h wchar.h])
+AC_CHECK_HEADERS([limits.h stdint.h wchar.h cstdlib])
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL
@@ -31,6 +38,7 @@ AC_TYPE_UINT8_T
 
 # Checks for library functions.
 AC_CHECK_FUNCS([setlocale strchr])
+AC_CHECK_FUNCS([dlopen dlsym dlerror dlclose])
 
 AC_CONFIG_FILES([Makefile
                  libvlcpp/Makefile

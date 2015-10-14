@@ -1,5 +1,5 @@
 // C++ Class Library for VLC/VLM
-// Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University
+// Copyright (C) 2015 Anders Lï¿½vgren, Computing Department at BMC, Uppsala University
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU Lesser General Public License as published by
@@ -27,9 +27,23 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#ifdef HAVE_CSTRING
+#include <cstring>
+#elif  HAVE_STRING_H
+#include <string.h>
+#endif
+#ifdef HAVE_CSTDLIB
+#include <cstdlib>
+#elif  HAVE_STDLIB_H
+#include <stdlib.h>
+#endif
 
 #include "options.hpp"
 #include "application.hpp"
+
+#if defined(linux)
+#define _strdup strdup
+#endif
 
 // 
 // Command line option (--key=val).
@@ -46,7 +60,7 @@ struct Option
         void SetOptional()
         {
                 key = &key[2];
-                val = val ? val : "";
+                val = val ? val : (char *)("");
         }
 
         char *key;

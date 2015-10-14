@@ -23,6 +23,8 @@
 # include "stdafx.h"
 #endif
 
+#include <iostream>
+
 #include "library.hpp"
 #include "vlcpp.hpp"
 
