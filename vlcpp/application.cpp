@@ -76,7 +76,7 @@ void Application::Interactive()
                                         done = 1;
                                         break;
                         }
-                } catch(VLC::Exception &exception) {
+                } catch(VLCPP::Exception &exception) {
                         std::cerr << exception.message << " (" << exception.code << ")\n\n";
                 }
         }
@@ -90,7 +90,7 @@ void Application::BatchMode()
                 std::cin >> done;
                 vlc.StopMedia(options.media.name.c_str());
                 vlc.RemoveMedia(options.media.name.c_str());
-        } catch(VLC::Exception &exception) {
+        } catch(VLCPP::Exception &exception) {
                 std::cerr << exception.message << " (" << exception.code << ")\n";
         }
 }

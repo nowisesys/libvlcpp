@@ -365,7 +365,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\vlc.cpp"
+				RelativePath=".\vlcpp.cpp"
 				>
 			</File>
 		</Filter>
@@ -395,7 +395,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\vlc.hpp"
+				RelativePath=".\vlcpp.hpp"
 				>
 			</File>
 		</Filter>

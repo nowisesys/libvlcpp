@@ -18,7 +18,7 @@
 #ifndef __APPLICATION_HPP__
 #define __APPLICATION_HPP__
 
-#include "vlc.hpp"
+#include "vlcpp.hpp"
 #include "options.hpp"
 
 class Application
@@ -36,7 +36,7 @@ private:
 
         static std::string GetState(Options::State state);
 
-        VLC vlc;
+        VLCPP::VLM vlc;
         Options &options;
         int done;
 };

@@ -24,12 +24,12 @@ Usage:
 ------------------
 
 	#include <iostream>
-	#include <vlc.hpp>
+	#include <vlcpp.hpp>
 
 	int main(int argc, char **argv)
 	{
 		try {
-			VLC vlc(argc, argv);
+			VLCPP::VLM vlc(argc, argv);
 		
 			const char *name   = "desktop";
 			const char *input  = "screen://";
