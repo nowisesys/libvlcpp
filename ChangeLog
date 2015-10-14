@@ -1,4 +1,44 @@
 ------------------------------------------------------------------------
+r9104 | andlov | 2015-10-15 01:20:09 +0200 (Thu, 15 Oct 2015) | 1 line
+
+Applying __attribute__ ((visibility(hidden))) (defined in LIBVLCPP_API_HIDDEN macro) to non-exported library code.
+------------------------------------------------------------------------
+r9103 | andlov | 2015-10-15 00:48:12 +0200 (Thu, 15 Oct 2015) | 1 line
+
+Test headers using C++ compiler.
+------------------------------------------------------------------------
+r9102 | andlov | 2015-10-15 00:42:47 +0200 (Thu, 15 Oct 2015) | 1 line
+
+Ported project to build on Linux.
+------------------------------------------------------------------------
+r9101 | andlov | 2015-10-15 00:40:47 +0200 (Thu, 15 Oct 2015) | 1 line
+
+Implemented Library class on Linux using (dlopen & co) in -ldl.
+------------------------------------------------------------------------
+r9100 | andlov | 2015-10-14 23:19:30 +0200 (Wed, 14 Oct 2015) | 1 line
+
+More autotool generated files added to svn:ignore.
+------------------------------------------------------------------------
+r9099 | andlov | 2015-10-14 23:13:46 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Added autotool generated files to svn:ignore.
+------------------------------------------------------------------------
+r9098 | andlov | 2015-10-14 23:09:50 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Adding netbeans project.
+------------------------------------------------------------------------
+r9097 | andlov | 2015-10-14 23:09:15 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Removing generated m4 macros. Adding empty m4/acinclude.m4 for package local macros.
+------------------------------------------------------------------------
+r9096 | andlov | 2015-10-14 22:46:07 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Adding autotool files. Generate the package build files by running autogen.sh (or autoreconf --install).
+------------------------------------------------------------------------
+r9095 | andlov | 2015-10-14 22:20:13 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Moved files around to be GNU package compatible.
+------------------------------------------------------------------------
 r9093 | andlov | 2015-10-14 21:18:21 +0200 (Wed, 14 Oct 2015) | 1 line
 
 Prepared for next release 2.0.1
