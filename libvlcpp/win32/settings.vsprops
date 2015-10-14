@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="User Settings"
+	OutputDirectory="$(SolutionDir)\$(ConfigurationName)\$(PlatformName)"
+	IntermediateDirectory="$(SolutionDir)\Build\$(ConfigurationName)\$(PlatformName)\$(ProjectName)"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(SolutionDir)\libvlcpp\win32&quot;;&quot;win32&quot;"
+		PreprocessorDefinitions="HAVE_STDAFX_H=1"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="$(OutDir)"
+	/>
+	<UserMacro
+		Name="VideoLanSdkPath"
+		Value="%DEVROOT%\Library\VideoLAN-2.1.5"
+	/>
+</VisualStudioPropertySheet>
