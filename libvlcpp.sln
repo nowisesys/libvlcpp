@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvlcpp", "libvlcpp\libvlcpp.vcproj", "{C13932BD-2715-4C21-920B-71020B0781AB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlcpp", "vlcpp\vlcpp.vcproj", "{E8FCD863-1547-418F-8498-9CCC7F3DEC0C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C13932BD-2715-4C21-920B-71020B0781AB} = {C13932BD-2715-4C21-920B-71020B0781AB}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0603E210-03CF-4ED2-A65C-554BD107CB45}"
 	ProjectSection(SolutionItems) = preProject
