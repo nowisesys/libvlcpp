@@ -72,11 +72,6 @@ extern "C++" {
                 };
 
                 // 
-                // Forward declare:
-                // 
-                class Library;
-
-                // 
                 // Wrapper C++ class for the VLC manager (libvlc).
                 // 
                 class LIBVLCPP_API_PUBLIC VLM
@@ -147,7 +142,7 @@ extern "C++" {
                         void AddInput(const char *name, const char *input) const;
 
                 private:
-                        Library *lib;
+                        class Library *lib;
                         Instance *vlc;
                 };
         }       // namespace VLCPP
