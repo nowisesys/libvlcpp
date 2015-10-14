@@ -1,5 +1,5 @@
 // C++ Class Library for VLC/VLM
-// Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University
+// Copyright (C) 2015 Anders Lï¿½vgren, Computing Department at BMC, Uppsala University
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU Lesser General Public License as published by
@@ -19,13 +19,14 @@
 #define __LIBRARY_HPP__
 
 #include <vlc/vlc.h>
+#include "vlcpp.hpp"
 
 namespace VLCPP {
 
         // 
         // Internal libvlc binding class.
         // 
-        class Library
+        class LIBVLCPP_API_HIDDEN Library
         {
         public:
 #ifdef WIN32
