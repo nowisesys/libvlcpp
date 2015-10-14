@@ -1,0 +1,25 @@
+------------------------------------------------------------------------
+r9093 | andlov | 2015-10-14 21:18:21 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Prepared for next release 2.0.1
+------------------------------------------------------------------------
+r9092 | andlov | 2015-10-14 21:01:47 +0200 (Wed, 14 Oct 2015) | 1 line
+
+The VLC/VLM library class is an implementation detail and should be opaque for library consumers.
+------------------------------------------------------------------------
+r9090 | andlov | 2015-10-14 20:47:15 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Be a bit more verbose on batch mode.
+------------------------------------------------------------------------
+r9089 | andlov | 2015-10-14 20:39:22 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Added version and bug report command options.
+------------------------------------------------------------------------
+r9088 | andlov | 2015-10-14 20:05:04 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Renaming class VLC -> VLM. Using namespace VLCPP for library. Moving exception in namespace instead of class (was VLC) scope. Renaming header vlc.hpp -> vlcpp.hpp
+------------------------------------------------------------------------
+r9086 | andlov | 2015-10-14 19:33:15 +0200 (Wed, 14 Oct 2015) | 1 line
+
+Initial import of project libvlcpp.
+------------------------------------------------------------------------
