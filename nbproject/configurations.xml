@@ -46,6 +46,22 @@
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
           <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>HAVE_CONFIG_H=1</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>.</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>HAVE_CONFIG_H=1</Elem>
+            </preprocessorList>
+          </ccTool>
         </makeTool>
       </makefileType>
       <item path="libvlcpp/linux/library.cpp" ex="false" tool="1" flavor2="4">
