@@ -18,6 +18,13 @@
 #ifndef __APPLICATION_HPP__
 #define __APPLICATION_HPP__
 
+#ifndef PACKAGE_VERSION
+#define PACKAGE_VERSION "2.0.0"
+#endif
+#ifndef PACKAGE_BUGREPORT
+#define PACKAGE_BUGREPORT "Anders Lövgren <anders.lovgren@bmc.uu.se>"
+#endif
+
 #include "vlcpp.hpp"
 #include "options.hpp"
 

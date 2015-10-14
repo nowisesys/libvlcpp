@@ -50,6 +50,7 @@ struct Options
 
         void Parse(int argc, char **argv);      // Command line
         void Usage();                           // Command line
+        void Version();                         // Command line
 
         Mode Read();                            // Interactive
         Mode Read(const std::string &option);   // Interactive
@@ -71,20 +72,10 @@ struct Options
                 bool enabled;
                 bool loop;
                 
-                Media() 
-                        : numopts(0), enabled(true), loop(false) 
-                {
-                }
-                
-                Media(const char *name, const char *input, const char *output) 
-                        : name(name), input(input), output(output) 
-                {
-                }
+                Media(); 
+                Media(const char *name, const char *input, const char *output);
+                Media(const std::string &name, const std::string &input, const std::string &output);
 
-                Media(const std::string &name, const std::string &input, const std::string &output) 
-                        : name(name), input(input), output(output) 
-                {
-                }
         } media;
 
         // 
@@ -93,10 +84,14 @@ struct Options
         struct Runtime
         {
                 const char *prog;       // Program name
+                const char *version;    // Program version
+                const char *bugreport;  // Bug report address
                 bool verbose;
                 bool interactive;
-                Runtime() : prog(0), verbose(false), interactive(false) {}
-                Runtime(const char *prog) : prog(prog), verbose(false), interactive(false) {}
+                
+                Runtime();
+                Runtime(const char *prog);
+
         } runtime;
 
         // 

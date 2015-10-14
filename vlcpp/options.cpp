@@ -29,6 +29,7 @@
 #include <vector>
 
 #include "options.hpp"
+#include "application.hpp"
 
 // 
 // Command line option (--key=val).
@@ -51,6 +52,35 @@ struct Option
         char *key;
         char *val;
 };
+
+Options::Media::Media() 
+: numopts(0), enabled(true), loop(false) 
+{
+}
+
+Options::Media::Media(const char *name, const char *input, const char *output) 
+: name(name), input(input), output(output) 
+{
+}
+
+Options::Media::Media(const std::string &name, const std::string &input, const std::string &output) 
+: name(name), input(input), output(output) 
+{
+}
+
+Options::Runtime::Runtime() 
+: prog(0), verbose(false), interactive(false) 
+{
+        version = PACKAGE_VERSION;
+        bugreport = PACKAGE_BUGREPORT;
+}
+
+Options::Runtime::Runtime(const char *prog) 
+: prog(prog), verbose(false), interactive(false) 
+{
+        version = PACKAGE_VERSION;
+        bugreport = PACKAGE_BUGREPORT;
+}
 
 Options::Options()
 {
@@ -95,7 +125,10 @@ void Options::Parse(int argc, char **argv)
                 if(strcmp(opt.key, "--help") == 0 || strcmp(opt.key, "-h") == 0) {
                         Usage();
                         exit(0);
-                } else if(strcmp(opt.key, "--verbose") == 0 || strcmp(opt.key, "-V") == 0) {
+                } else if(strcmp(opt.key, "--version") == 0 || strcmp(opt.key, "-V") == 0) {
+                        Version();
+                        exit(0);
+                } else if(strcmp(opt.key, "--verbose") == 0 || strcmp(opt.key, "-v") == 0) {
                         runtime.verbose = true;
                 } else if(strcmp(opt.key, "--interactive") == 0) {
                         runtime.interactive = true;
@@ -162,16 +195,25 @@ void Options::Usage()
                 << "  --desktop:      Alias for streaming the desktop.\n"
                 << "  --interactive:  Run in interactive mode.\n"
                 << "  --help,-h:      This casual help.\n"
-                << "  --verbose,-V:   Be more verbose.\n"
+                << "  --version,-V:   Show version.\n"
+                << "  --verbose,-v:   Be more verbose.\n"
                 << "\n"
                 << "Notice:\n"
                 << "1. Unrecognized options (like --screen-fps=0.5) get passed as optionals.\n"
                 << "\n"
                 << "Examples:\n"
+                << "shell> " << runtime.prog << " --interactive --screen-fps=1.0\n"
+                << "shell> " << runtime.prog << " --desktop\n"
                 << "shell> " << runtime.prog << " --name=desktop --live-caching=0 --screen-fps=0.5 \\\n"
                 << "            --input=screen:// \\\n"
                 << "            --output=#transcode{vcodec=WMV2,vb=256,acodec=none}:http{dst=:3752/desktop.asf}\n"
-                << "shell> " << runtime.prog << " --interactive --screen-fps=1.0\n";
+                << "\n"
+                << "Report bug to " << runtime.bugreport;
+}
+
+void Options::Version()
+{
+        std::cout << runtime.prog << " v" << runtime.version << std::endl;
 }
 
 void Options::Dump(std::ostream &out)
