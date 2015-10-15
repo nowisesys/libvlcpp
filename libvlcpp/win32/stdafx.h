@@ -15,3 +15,14 @@
 #define WIN32_LEAN_AND_MEAN
 
 #include <windows.h>
+
+// 
+// Have setlocale() function:
+// 
+#define HAVE_SETLOCALE 1
+
+// 
+// C++ standard library headers:
+// 
+#define HAVE_CSTRING 1
+#define HAVE_CSTDLIB 1
