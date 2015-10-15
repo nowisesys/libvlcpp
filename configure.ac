@@ -43,9 +43,6 @@ AC_TYPE_UINT8_T
 AC_CHECK_FUNCS([setlocale strchr])
 AC_CHECK_FUNCS([dlopen dlsym dlerror dlclose])
 
-AC_CONFIG_FILES([Makefile
-                 libvlcpp/Makefile
-                 vlcpp/Makefile
-])
+AC_CONFIG_FILES([Makefile libvlcpp/Makefile vlcpp/Makefile])
 
 AC_OUTPUT
