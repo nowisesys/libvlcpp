@@ -1,4 +1,8 @@
-Verison 2.1.0 (2015-10-15):
+Version 2.1.1 (2015-10-15):
+
+	*) Updated version information for Windows.
+	
+Version 2.1.0 (2015-10-15):
 
     *) Ported project to Linux. Using autotools (autogen.sh) for configuring and
        generating Makefiles.
