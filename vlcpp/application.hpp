@@ -19,7 +19,7 @@
 #define __APPLICATION_HPP__
 
 #ifndef PACKAGE_VERSION
-#define PACKAGE_VERSION "2.0.0"
+#define PACKAGE_VERSION "2.1.1"
 #endif
 #ifndef PACKAGE_BUGREPORT
 #define PACKAGE_BUGREPORT "Anders Lövgren <anders.lovgren@bmc.uu.se>"

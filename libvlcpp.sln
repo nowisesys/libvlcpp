@@ -10,9 +10,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vlcpp", "vlcpp\vlcpp.vcproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0603E210-03CF-4ED2-A65C-554BD107CB45}"
 	ProjectSection(SolutionItems) = preProject
-		COPYING.txt = COPYING.txt
-		GPL-3.txt = GPL-3.txt
-		README.txt = README.txt
+		AUTHORS = AUTHORS
+		ChangeLog = ChangeLog
+		COPYING = COPYING
+		COPYING-GPL3 = COPYING-GPL3
+		NEWS = NEWS
+		README = README
 	EndProjectSection
 EndProject
 Global

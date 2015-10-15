@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([libvlcpp], [2.1.0], [anders.lovgren@bmc.uu.se])
+AC_INIT([libvlcpp], [2.1.1], [anders.lovgren@bmc.uu.se])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIRS([m4])
@@ -45,7 +45,7 @@ AC_CHECK_FUNCS([dlopen dlsym dlerror dlclose])
 
 AC_CONFIG_FILES([Makefile
                  libvlcpp/Makefile
-		 vlcpp/Makefile
+                 vlcpp/Makefile
 ])
 
 AC_OUTPUT
