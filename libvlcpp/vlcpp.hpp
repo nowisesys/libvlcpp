@@ -55,7 +55,7 @@ extern "C++" {
 
 #define LIBVLCPP_MAJOR 2
 #define LIBVLCPP_MINOR 1
-#define LIBVLCPP_REVIS 1
+#define LIBVLCPP_REVIS 2
 
         namespace VLCPP {
 

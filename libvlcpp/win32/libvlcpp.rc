@@ -54,7 +54,7 @@ END
 
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION 2,0,0,0
- PRODUCTVERSION 2,1,1,0
+ PRODUCTVERSION 2,1,2,0
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -76,7 +76,7 @@ BEGIN
             VALUE "LegalCopyright", "Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University"
             VALUE "OriginalFilename", "libvlcpp.dll"
             VALUE "ProductName", "C++ Runtime Interface for the VLC Library (VLM)"
-            VALUE "ProductVersion", "2, 1, 1, 0"
+            VALUE "ProductVersion", "2, 1, 2, 0"
         END
     END
     BLOCK "VarFileInfo"
