@@ -3,24 +3,35 @@
  	 C++ Class Library for VLC/VLM 
 	************************************
 
-This C++ library is a lightweight frontend for VLM (VideoLan Manager) found in 
-the VLC library (libvlc). It's an development library meant to be used for 
-application development.
 
-The linking with the VLC library (libvlc) is done at runtime instead of loadtime. 
-On Windows, this means that programs using libvlcpp can use a system installation 
-of VLC.
+This is a lightweight C++ frontend library for the VLC/VLM (VideoLan Manager) API. The goal was 
+to create a robust and simple to use library for desktop streaming, even though its not limited 
+to that specific task.
 
-The VLC library (libvlc and its related plugin directory) are searched for in:
 
-  1. A sub directory relative to the application.
-  2. The standard location for VLC. This is system dependent.
-  3. The registered install directory (only on Windows).
-  
-Like VLC, this library is released under the GNU Lesser General Public License 
-(LGPL-3). See COPYING.txt and LGPL-3 distributed with the source code.
+** Runtime linking:
+------------------
 
-Usage:
+    Linking with libvlc is done at runtime instead of loadtime. On Windows, this means that 
+    programs using this library (libvlcpp) can use e.g. the system installation of VLC without 
+    requiring DLL-files and plug-ins to be bundled with the application.
+
+** Search locations:
+------------------
+
+    The VLC library (libvlc and its related plug-in directory) are searched for in:
+
+      1. A sub directory relative to the application.
+      2. The standard location for VLC. This is system dependent.
+      3. The registered install directory (only on Windows).
+
+** License:
+------------------
+
+    Like VLC, this library is released under the GNU Lesser General Public License (LGPL-3). 
+    See COPYING.txt and LGPL-3 distributed with the source code.
+
+** Usage:
 ------------------
 
 	#include <iostream>
@@ -49,11 +60,29 @@ Usage:
 		}
 	}
 
-Extending:
+** Linux/UNIX:
 ------------------
 
-The VLC library handle and instance wrapped by the VLC class can be reused for 
-extended functionality (exposing new function from the VLC library):
+    Run autogen.sh to generate configure script and *.in template files:
+
+        bash$> ./autogen.sh
+
+    Then configure, build and install the library:
+
+        bash$> ./configure
+        bash$> make
+        bash$> make install
+
+** Windows:
+------------------
+
+    Use Visual Studio 2008 or later for building the libvlcpp.sln solution.
+
+** Extending:
+------------------
+
+    The VLC library handle and instance wrapped by the VLC class can be reused for extended 
+    functionality (exposing new function from the VLC library):
 
 	#include <dlfcn.h>
 	#include <vlc/vlc.h>
@@ -69,4 +98,4 @@ extended functionality (exposing new function from the VLC library):
 	}
 
 
-// Anders Lövgren, 2015-10-10
+// Anders LÃ¶vgren, 2015-10-10
