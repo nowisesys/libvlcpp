@@ -1,5 +1,7 @@
 // C++ Class Library for VLC/VLM
-// Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University
+// 
+// Copyright (C) 2015-2018 Anders LÃ¶vgren, BMC-IT, Uppsala University
+// Copyright (C) 2018-2019 Anders LÃ¶vgren, Nowise Systems
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU Lesser General Public License as published by
@@ -124,7 +126,7 @@ void Application::ShowQueue()
 void Application::ShowLicense()
 {
         std::cout 
-                << "Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University\n\n"
+                << "Copyright (C) 2015-2019 Anders LÃ¶vgren, Nowise Systems/BMC-IT, Uppsala University\n\n"
                 << "This program comes with ABSOLUTELY NO WARRANTY. It is free software and you are\n"
                 << "welcome to redistribute it under certain conditions.\n"
                 << "For details visit http://www.gnu.org/licenses/gpl-3.0.en.html.\n\n";

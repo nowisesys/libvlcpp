@@ -50,4 +50,4 @@ Queue desktop:
 }
 
 
-// Anders Lövgren, 2015-10-10
+// Anders LÃ¶vgren, 2015-10-10

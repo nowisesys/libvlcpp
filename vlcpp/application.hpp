@@ -1,5 +1,7 @@
 // C++ Class Library for VLC/VLM
-// Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University
+// 
+// Copyright (C) 2015-2018 Anders LÃ¶vgren, BMC-IT, Uppsala University
+// Copyright (C) 2018-2019 Anders LÃ¶vgren, Nowise Systems
 // 
 // This program is free software: you can redistribute it and/or modify 
 // it under the terms of the GNU Lesser General Public License as published by
@@ -19,10 +21,10 @@
 #define __APPLICATION_HPP__
 
 #ifndef PACKAGE_VERSION
-#define PACKAGE_VERSION "2.1.2"
+#define PACKAGE_VERSION "2.1.3"
 #endif
 #ifndef PACKAGE_BUGREPORT
-#define PACKAGE_BUGREPORT "Anders Lövgren <anders.lovgren@bmc.uu.se>"
+#define PACKAGE_BUGREPORT "Anders LÃ¶vgren <andlov@nowise.se>"
 #endif
 
 #include "vlcpp.hpp"

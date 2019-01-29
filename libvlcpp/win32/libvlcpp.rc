@@ -54,7 +54,7 @@ END
 
 VS_VERSION_INFO VERSIONINFO
  FILEVERSION 2,0,0,0
- PRODUCTVERSION 2,1,2,0
+ PRODUCTVERSION 2,1,3,0
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -69,14 +69,14 @@ BEGIN
     BEGIN
         BLOCK "041d04b0"
         BEGIN
-            VALUE "CompanyName", "Uppsala University"
-            VALUE "FileDescription", "VLC Class Library (C++)"
+            VALUE "CompanyName", "Nowise Systems"
+            VALUE "FileDescription", "VLC/VLM Class Library (C++)"
             VALUE "FileVersion", "2, 0, 0, 0"
             VALUE "InternalName", "libvlcpp"
-            VALUE "LegalCopyright", "Copyright (C) 2015 Anders Lövgren, Computing Department at BMC, Uppsala University"
+            VALUE "LegalCopyright", "Copyright (C) 2015-2019 Anders LÃ¶vgren, Nowise Systems/BMC-IT, Uppsala University"
             VALUE "OriginalFilename", "libvlcpp.dll"
             VALUE "ProductName", "C++ Runtime Interface for the VLC Library (VLM)"
-            VALUE "ProductVersion", "2, 1, 2, 0"
+            VALUE "ProductVersion", "2, 1, 3, 0"
         END
     END
     BLOCK "VarFileInfo"

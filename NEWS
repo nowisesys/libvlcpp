@@ -1,6 +1,18 @@
+Version 2.1.3 (2019-01-29):
+    
+    *) Migrated to GIT. 
+
+    *) New author, maintainer and homepage.
+
+    *) Fixed UTF-8 file encodings.
+
+Version 2.1.2 (2015-10-26):
+
+    *) Bug fixes (?)
+
 Version 2.1.1 (2015-10-15):
 
-	*) Updated version information for Windows.
+    *) Updated version information for Windows.
 	
 Version 2.1.0 (2015-10-15):
 
