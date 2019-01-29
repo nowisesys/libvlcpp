@@ -1,3 +1,51 @@
+commit 8b9163a420e4926100b3974a1c699f1c67575357 (HEAD -> master, tag: release-2.1.3, upstream/master, origin/master)
+Author: Anders Lövgren <andlov@nowise.se>
+Date:   Tue Jan 29 01:56:05 2019 +0100
+
+    New release of libvlcpp.
+
+commit dc5b10e271cf234ee629d99b882d9d41757706c5
+Author: Anders Lövgren <andlov@nowise.se>
+Date:   Tue Jan 29 01:46:33 2019 +0100
+
+    New author, maintainer and homepage. Fixed UTF-8 file encodings.
+
+commit 74049e839e77b28983133fc3c8665d42b0d2bf0b
+Author: Anders Lövgren <andlov@nowise.se>
+Date:   Tue Jan 29 01:45:46 2019 +0100
+
+    Ignore netbeans private project directory.
+
+commit cdd915f728c189c83d939268a6c642c720d8e713
+Author: Anders Lövgren <35581658+nowisesys@users.noreply.github.com>
+Date:   Tue Jan 29 01:31:21 2019 +0100
+
+    Created markdown readme file
+
+commit 3ddaa3e1504260a4953027f218a04df41dd5c23d
+Author: Anders Lövgren <35581658+nowisesys@users.noreply.github.com>
+Date:   Tue Jan 29 01:22:06 2019 +0100
+
+    Delete LICENSE
+
+commit 767a20eb6ab7a6f5f41adfaf663bf6aebb7eee83
+Author: Anders Lövgren <35581658+nowisesys@users.noreply.github.com>
+Date:   Tue Jan 29 01:20:53 2019 +0100
+
+    Create LICENSE
+
+commit 9b0d796880cacc3fec6ab2245f2f329e45c746cc
+Author: Anders Lövgren <andlov@nowise.se>
+Date:   Mon Jan 28 16:28:33 2019 +0100
+
+    Removed DISCONTINUED file after SVN migration.
+
+commit 0060b4c55e99b92ec0e08bb3d3266a8621a8d583
+Author: Anders Lövgren <andlov@nowise.se>
+Date:   Mon Jan 28 14:35:58 2019 +0000
+
+    Migrated to GIT (QNET)
+
 ------------------------------------------------------------------------
 r9104 | andlov | 2015-10-15 01:20:09 +0200 (Thu, 15 Oct 2015) | 1 line
 
